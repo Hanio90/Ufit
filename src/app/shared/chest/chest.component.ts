@@ -9,12 +9,14 @@ import { Exercise } from '../models/exercise';
 })
 export class ChestComponent implements OnInit {
 
-  exercises: [];
+  exercises: Exercise[];
 
   constructor(private service: PectoralService) { }
 
   ngOnInit() {
     this.service.getExercises().subscribe(exercises => {
+      this.exercises = exercises;
+      console.log(this.exercises);
       console.log(exercises);
     });
   }
