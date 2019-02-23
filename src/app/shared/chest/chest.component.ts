@@ -16,10 +16,6 @@ export class ChestComponent implements OnInit {
   ngOnInit() {
     this.service.getExercises().subscribe(exercises => {
       this.exercises = exercises;
-      console.log(this.exercises);
-      console.log(exercises);
     });
   }
-
-
 }
