@@ -6,13 +6,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { ChestComponent } from './shared/chest/chest.component';
+import { ChestComponent } from './chest/chest.component';
+import { UserSignUpComponent } from './user-sign-up/user-sign-up.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ChestComponent,
+    UserSignUpComponent,
   ],
   imports: [
     BrowserModule,
