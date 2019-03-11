@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PectoralService } from '../Services/pectoral.service';
-import { Exercise } from '../models/exercise';
+import { PectoralService } from '../shared/Services/pectoral.service';
+import { Exercise } from '../shared/models/exercise';
 
 @Component({
   selector: 'app-chest',
